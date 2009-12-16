@@ -1,0 +1,53 @@
+/************************************************************************/
+/* Stop Spam Referer - Security system                                  */
+/* ===================================                                  */
+/* Write by Cyril Levert                                                */
+/* Copyright (c) 2009                                                   */
+/* http://www.php-minimus.org                                           */
+/* dev@php-minimus.org                                                  */
+/* Release version 1.0.0                                                */
+/* Release date : 12-14-2009                                            */
+/*                                                                      */
+/* This program is free software.                                       */
+/************************************************************************/
+
+Official website :
+
+ - www.stop-spam-referer.info
+
+
+Copyright Notice
+----------------
+SSR is an Open Source Software.
+
+You are not allowed to modify copyrights.
+You are not allow to redistribute this script without my write autorisation.
+
+
+Intsallation
+-----------
+
+Uploader all datats in html folder ( referer folder )
+
+Open your principal file ( example index.php ) ans add these lines:
+
+define('BAD_REFERER_ACTIVE', true);
+if ( is_file( @dirname(__FILE__).'/referer/bad_referer.php' ) )
+	include_once( @dirname(__FILE__).'/referer/bad_referer.php' );
+
+
+Deactive SSR
+define('BAD_REFERER_ACTIVE', false);
+
+For complement, switch or other please read the documentation on the website
+
+
+
+
+Others free and open source projects
+------------------------------------
+ CMS  : www.php-maximus.org
+ Blog : www.php-minimus.org
+
+Cyril Levert Open Source Specialist since 2002
+
